@@ -8,7 +8,7 @@ c = conn.cursor()
 #c.execute('''CREATE TABLE CLIENTS
 #             ([generated_id] INTEGER PRIMARY KEY,[Client_Name] text, [Country_ID] integer, [Date] date)''')
 c.execute('''
-CREATE TABLE "loan_application" (
+CREATE TABLE IF NOT EXISTS "loan_application" (
 	"loanid"	INTEGER DEFAULT 1000 PRIMARY KEY AUTOINCREMENT,
 	"name"	TEXT,
 	"email"	TEXT,
