@@ -42,6 +42,6 @@ result = cursor.fetchall()
 # delete="DELETE FROM `loan_application` WHERE loanid = (SELECT MAX(loanid) FROM `loan_application`)"
 # print("sending data and database data matching")
 # c.execute(delete)
-#c.execute("DROP TABLE `loan_application`")
-#conn.commit()
+c.execute("DROP TABLE `loan_application`")
+conn.commit()
 driver.close()
