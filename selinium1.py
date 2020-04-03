@@ -9,7 +9,7 @@ from selenium.webdriver.common.keys import Keys
 # The database will be created in the location where 'py' file is saved
 conn = sqlite3.connect('loan_data.db')  
 c = conn.cursor() 
-driver = webdriver.Chrome(r'C:\Users\Dell\ChromeWebdriver') 
+driver = webdriver.Chrome() 
 #browser = webdriver.Firefox()
 driver.get("http://localhost:5000/application.html")
 name=driver.find_element_by_name("name")
