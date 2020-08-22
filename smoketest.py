@@ -18,7 +18,7 @@ driver = webdriver.Chrome()
 # test deployment url
 url = "http://localhost:5000/"
 driver.get(url)
-response = requests.get(url)
+#response = requests.get(url)
 try:
     assert response.status_code == 200
 except:
